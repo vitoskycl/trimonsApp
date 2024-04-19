@@ -34,4 +34,13 @@ public class ClienteController {
 		}
 	}
 	
+	// @CrossOrigin(origins = "http://localhost:4200")
+	@GetMapping("/clientes/count")
+	public ResponseEntity<Long> getNumeroClientes(){		
+		try {			
+			return new ResponseEntity<Long>(Long.valueOf(clienteService.countAll()), HttpStatus.OK);
+		} catch (Exception e) {
+			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+	}
 }

@@ -1,5 +1,5 @@
 
-Listado de Clientes
+<h2>Listado de Clientes</h2>
 <table mat-table [dataSource]="clientesDS" class="mat-elevation-z8">
   <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef> Id. </th>
@@ -24,7 +24,7 @@ Listado de Clientes
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-<mat-paginator [length]="100"
+<mat-paginator [length]="length"
               (page)="handlePageEvent($event)"
               [pageSize]="pageSize"
               aria-label="Select page">

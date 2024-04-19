@@ -11,4 +11,5 @@ import cl.trimons.crm.dto.ClienteDTO;
 public interface ClienteService {
 	List<ClienteDTO> fetchAll();
 	List<ClienteDTO> fetchAll(Pageable paging);
+	long countAll();
 }

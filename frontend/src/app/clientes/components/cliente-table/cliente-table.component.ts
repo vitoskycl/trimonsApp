@@ -13,7 +13,7 @@ import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 })
 export class ClienteTableComponent  implements OnInit{
   public clientesDS: Cliente[] = [];
-  length = 50;
+  length = 100;
   pageSize = 10;
   pageIndex = 0;
   pageSizeOptions = [5, 10, 25];
@@ -36,6 +36,7 @@ export class ClienteTableComponent  implements OnInit{
 
   ngOnInit(): void {
     this.clienteService.getClientes(this.pageIndex, this.pageSize).subscribe(lista => this.clientesDS = lista);
+    this.clienteService.getTotalClientes().subscribe(c => this.length = c);
   }
 
   displayedColumns: string[] = ['id', 'nombre', 'fechaNacimiento', 'direccion', 'telefono'];
