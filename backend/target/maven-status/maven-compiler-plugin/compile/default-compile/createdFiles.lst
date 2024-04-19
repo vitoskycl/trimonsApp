@@ -1,0 +1,9 @@
+cl/trimons/crm/App.class
+cl/trimons/crm/dto/ClienteDTO.class
+cl/trimons/crm/service/ClienteService.class
+cl/trimons/crm/entity/Cliente.class
+cl/trimons/crm/utils/FormatUtil.class
+cl/trimons/crm/repository/ClienteRepository.class
+cl/trimons/crm/dto/ClienteDTO$ClienteDTOBuilder.class
+cl/trimons/crm/controller/ClienteController.class
+cl/trimons/crm/service/ClienteServiceImpl.class

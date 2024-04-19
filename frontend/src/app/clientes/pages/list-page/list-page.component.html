@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col">
+    <h2>
+      Listado de Clientes
+    </h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div *ngIf="clientes.length === 0; else table" class="alert alert-warning text-center">
+      No hay Clientes que mostrar
+    </div>
+
+    <ng-template #table>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>F. Nacimiento</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cliente of clientes; let i = index">
+            <td>{{ cliente.id}}</td>
+            <td>{{ cliente.nombre}}</td>
+            <td>{{ cliente.fechaNacimiento}}</td>
+            <td>{{ cliente.direccion}}</td>
+            <td>{{ cliente.telefono}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-template>
+  </div>
+</div>
+<!--
+<div class="row">
+  <div class="col">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> Id. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+      </ng-container>
+      <ng-container matColumnDef="fechaNacimiento">
+        <th mat-header-cell *matHeaderCellDef> F. Nacimiento </th>
+        <td mat-cell *matCellDef="let element"> {{element.fechaNacimiento}} </td>
+      </ng-container>
+      <ng-container matColumnDef="direccion">
+        <th mat-header-cell *matHeaderCellDef> Direccion </th>
+        <td mat-cell *matCellDef="let element"> {{element.direccion}} </td>
+      </ng-container>
+      <ng-container matColumnDef="telefono">
+        <th mat-header-cell *matHeaderCellDef> Telefono </th>
+        <td mat-cell *matCellDef="let element"> {{element.telefono}} </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div> -->
+
+

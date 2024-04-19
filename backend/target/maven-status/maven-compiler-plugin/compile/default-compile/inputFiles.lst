@@ -1,0 +1,8 @@
+/home/vmorales/Develop/labs/trimonsApp/backend/src/main/java/cl/trimons/crm/service/ClienteService.java
+/home/vmorales/Develop/labs/trimonsApp/backend/src/main/java/cl/trimons/crm/repository/ClienteRepository.java
+/home/vmorales/Develop/labs/trimonsApp/backend/src/main/java/cl/trimons/crm/service/ClienteServiceImpl.java
+/home/vmorales/Develop/labs/trimonsApp/backend/src/main/java/cl/trimons/crm/entity/Cliente.java
+/home/vmorales/Develop/labs/trimonsApp/backend/src/main/java/cl/trimons/crm/utils/FormatUtil.java
+/home/vmorales/Develop/labs/trimonsApp/backend/src/main/java/cl/trimons/crm/dto/ClienteDTO.java
+/home/vmorales/Develop/labs/trimonsApp/backend/src/main/java/cl/trimons/crm/controller/ClienteController.java
+/home/vmorales/Develop/labs/trimonsApp/backend/src/main/java/cl/trimons/crm/App.java
