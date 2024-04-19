@@ -20,5 +20,5 @@ El frontend fue generado con Angular CLI version 17.3.5
 2) cd trimonsApp
 3) mvn clean package
 4) cd backend/target
-5) java -jar backend-1.0-SNAPSHOT.jar
+5) java -jar trimonsApp.jar
 6) Ir a `http://localhost:8080/`
